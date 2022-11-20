@@ -42,5 +42,5 @@ COPY src ./src
 # RUN ls -l /app/
 # RUN ls -l /target/
 EXPOSE 8080
-CMD ["java","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-Dserver.port=8080","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
 # CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
