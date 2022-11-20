@@ -1,0 +1,7 @@
+#
+#Sun Nov 20 09:45:00 ICT 2022
+com.midmerchant.midmerchantbackend.service.UserServiceImpl=org.springframework.stereotype.Component
+com.midmerchant.midmerchantbackend.MidMerchantBackendApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration
+com.midmerchant.midmerchantbackend.repository.UserRepository=org.springframework.stereotype.Component,org.springframework.data.repository.Repository
+com.midmerchant.midmerchantbackend.entity.UserEntity=javax.persistence.Entity,javax.persistence.Table
+com.midmerchant.midmerchantbackend.controller.UserController=org.springframework.stereotype.Component
