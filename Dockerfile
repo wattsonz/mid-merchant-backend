@@ -42,5 +42,5 @@ ADD target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SN
 # COPY src ./src
 # RUN ls -l /app/
 # RUN ls -l /target/
-CMD ["java","-Dserver.port=$PORT","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
 # CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
