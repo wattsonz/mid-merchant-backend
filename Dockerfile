@@ -12,5 +12,6 @@ FROM amazoncorretto:17.0.5-alpine
 
 VOLUME /tmp
 COPY target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SNAPSHOT.jar
+RUN ls -l
 EXPOSE 8080
 CMD [“java”,”-Djava.security.egd=file:/dev/./urandom”,”-jar”,”/mid-merchant-backend-0.0.1-SNAPSHOT.jar”]
