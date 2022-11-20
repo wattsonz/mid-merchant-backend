@@ -11,7 +11,7 @@ FROM amazoncorretto:17.0.5-alpine
 # CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
 
 VOLUME /tmp
-COPY target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SNAPSHOT.jar
 RUN ls -l
+COPY target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
 CMD [“java”,”-Djava.security.egd=file:/dev/./urandom”,”-jar”,”/mid-merchant-backend-0.0.1-SNAPSHOT.jar”]
