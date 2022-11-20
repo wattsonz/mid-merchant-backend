@@ -10,7 +10,7 @@ FROM amazoncorretto:17.0.5-alpine
 # CMD ["java","-jar","target/mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
 # CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
 
-VOLUME /tmp
+# VOLUME /tmp
 RUN ls -l
 COPY target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SNAPSHOT.jar
 EXPOSE 8080
