@@ -7,4 +7,5 @@ RUN ./mvnw dependency:go-offline
 # ADD target/mid-merchant-backend-0.0.1-SNAPSHOT.jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
 COPY src ./src
 EXPOSE 8080
-CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
+CMD ["java","-jar","target/mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
+# CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
