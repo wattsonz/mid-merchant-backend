@@ -37,10 +37,10 @@ FROM amazoncorretto:17.0.5-alpine
 # COPY mvnw pom.xml ./
 # RUN chmod +x ./mvnw
 # RUN ./mvnw dependency:go-offline
-EXPOSE 8080
 ADD target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SNAPSHOT.jar
 # COPY src ./src
 # RUN ls -l /app/
 # RUN ls -l /target/
-CMD ["java","-Dserver.port=8080","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
+# CMD ["java","-Dserver.port=8080","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
 # CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
+CMD [ "sh", "-c", "java -jar /mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
