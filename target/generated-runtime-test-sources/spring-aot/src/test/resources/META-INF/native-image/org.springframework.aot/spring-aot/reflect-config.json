@@ -222,6 +222,16 @@
     ]
   },
   {
+    "name": "com.midmerchant.midmerchantbackend.controller.HomeController",
+    "allDeclaredMethods": true,
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
     "name": "com.midmerchant.midmerchantbackend.controller.UserController",
     "allDeclaredMethods": true,
     "methods": [
@@ -1665,13 +1675,13 @@
         "parameterTypes": []
       },
       {
-        "name": "livenessStateHealthIndicator",
+        "name": "readinessStateHealthIndicator",
         "parameterTypes": [
           "org.springframework.boot.availability.ApplicationAvailability"
         ]
       },
       {
-        "name": "readinessStateHealthIndicator",
+        "name": "livenessStateHealthIndicator",
         "parameterTypes": [
           "org.springframework.boot.availability.ApplicationAvailability"
         ]
@@ -2064,14 +2074,14 @@
         "parameterTypes": []
       },
       {
-        "name": "javaInfoContributor",
-        "parameterTypes": []
-      },
-      {
         "name": "buildInfoContributor",
         "parameterTypes": [
           "org.springframework.boot.info.BuildProperties"
         ]
+      },
+      {
+        "name": "javaInfoContributor",
+        "parameterTypes": []
       }
     ]
   },

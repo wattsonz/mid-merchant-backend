@@ -1,6 +1,7 @@
 package org.springframework.aot;
 
 import com.midmerchant.midmerchantbackend.MidMerchantBackendApplication;
+import com.midmerchant.midmerchantbackend.controller.HomeController;
 import com.midmerchant.midmerchantbackend.controller.UserController;
 import com.midmerchant.midmerchantbackend.entity.UserEntity;
 import com.midmerchant.midmerchantbackend.repository.UserRepository;
@@ -280,6 +281,8 @@ public class ContextBootstrapInitializer implements ApplicationContextInitialize
         .instanceSupplier(PersistenceAnnotationBeanPostProcessor::new).customize((bd) -> bd.setRole(2)).register(beanFactory);
     BeanDefinitionRegistrar.of("com.midmerchant.midmerchantbackend.MidMerchantBackendApplication", MidMerchantBackendApplication.class)
         .instanceSupplier(MidMerchantBackendApplication::new).register(beanFactory);
+    BeanDefinitionRegistrar.of("homeController", HomeController.class)
+        .instanceSupplier(HomeController::new).register(beanFactory);
     BeanDefinitionRegistrar.of("userController", UserController.class).withConstructor(UserService.class)
         .instanceSupplier((instanceContext) -> instanceContext.create(beanFactory, (attributes) -> new UserController(attributes.get(0)))).register(beanFactory);
     BeanDefinitionRegistrar.of("userServiceImpl", UserServiceImpl.class).withConstructor(UserRepository.class)

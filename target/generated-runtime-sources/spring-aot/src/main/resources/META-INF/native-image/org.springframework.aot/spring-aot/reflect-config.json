@@ -222,6 +222,16 @@
     ]
   },
   {
+    "name": "com.midmerchant.midmerchantbackend.controller.HomeController",
+    "allDeclaredMethods": true,
+    "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": []
+      }
+    ]
+  },
+  {
     "name": "com.midmerchant.midmerchantbackend.controller.UserController",
     "allDeclaredMethods": true,
     "methods": [
@@ -3263,11 +3273,11 @@
         ]
       },
       {
-        "name": "gitProperties",
+        "name": "buildProperties",
         "parameterTypes": []
       },
       {
-        "name": "buildProperties",
+        "name": "gitProperties",
         "parameterTypes": []
       }
     ]

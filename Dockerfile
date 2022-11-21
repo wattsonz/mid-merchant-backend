@@ -44,4 +44,6 @@ ADD target/mid-merchant-backend-0.0.1-SNAPSHOT.jar mid-merchant-backend-0.0.1-SN
 # CMD ["java","-Dserver.port=8080","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
 # CMD java -Dserver.port=8080 -jar /app/mid-merchant-backend-0.0.1-SNAPSHOT.jar
 # CMD [ "sh", "-c", "java -jar /mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
-CMD [ "sh", "-c", "java $JAVA_OPTS -XX:+UseContainerSupport -Djava.security.egd=file:/dev/./urandom -jar /mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
+EXPOSE 8080
+CMD ["java","-jar","mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
+# CMD [ "sh", "-c", "java "," /target/mid-merchant-backend-0.0.1-SNAPSHOT.jar"]
